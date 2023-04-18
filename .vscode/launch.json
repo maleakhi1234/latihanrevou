@@ -1,0 +1,50 @@
+ html>
+<html>
+    <head>
+        <title>web judi</title>
+        <link rel="styleshoot" href="header.css">
+        <style>
+            .content {
+                flex-direction: row;
+                display: flex;
+            }
+            .content > div {
+                display: flex;
+                flex: 1;
+                align-content: center; justify-content: center
+            }
+        <\style>
+     <\head>
+     <body>
+        <nav class="container">
+            <img
+            src=https://akupintar.id/documents/20143/0/Sekolah-Tinggi-Agama-Kristen-Apollos-Manado.jpg/739c2dc6-f3cc-e496-c663-f3f2e5d2b532?version=1.0&t=1542342218603&imageThumbnail=1"
+            class="logo"    width="40"  height="40" \>
+
+            <div class="home">home<\<div>
+            <div class="search">search<\<div>
+            <div class="logout">logout<\<div>
+        </nav>
+
+        <header>
+            <h1>form belajar judi</h1>
+            <p>ini adalah website latihan pertama saya<!doctype
+        </header>
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open index.html",
+            "file": "h:\\belajar bikin web\\index.html"
+        }
+    ]
+}
+SetSenderUI(name, birthDate, gender, massage);
+      return false;
+
+      function SetSenderUI(name, birthDate, gender, massage) {

@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style navbar */
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 16px 24px;
+}
+.logo{
+    width: 50px;
+}
+.main{
+  padding: 24px;
+}
+.navbar{
+    display: flex;
+  align-items: center;
+    justify-content: space-between;
+    max-width: initial;
+    width: 100%;
+    margin: 0 auto;
+}
+.menu{
+  display: flex;
+}
+.utama-header{
+  line-height: 150%;
+  font-size: xx-large;
+  font-weight: 300;
+}
+.paragraf-utama{
+  line-height: 200%;
+ font-size: medium;
+}
+.utama-img{
+  width: 1366px;
+  height: 578px;
+}
+.img-slideshow{
+  width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    float: right;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .container{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.section{
+  padding: 10px;
+}
+#utama{
+  display: flex;
+    flex-direction: column;
+}
+#utama > h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/*style facil*/
+.facil-img{
+  width: 200px;
+  width: 300px;
+  height: 300px;
+  border-radius: 999px;
+}
+.facil-paragraf{
+  text-align: center;
+}
+.facil-list{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.facil-title{
+  padding: 30px;
+  font-size: 40px;
+  font-style: oblique;
+}
+.valdasi-inti{
+  flex: 50%;
+}
+.validasi-utama{
+  display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    width: 100%;
+    padding: 30px;
+    flex-wrap: nowrap;
+}
+.validasi-tiga{
+  border: 2px;
+    border-style: solid;
+    width: 80%;
+    padding-top: 3vh;
+    padding-left: 5vh;
+    padding-bottom: 8vh;
+}
+footer p {
+  text-align: right;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    padding-right: 2vw;
+}
+@media screen and (max-width: 600px) {
+  .header{
+    flex-direction: column;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .logo{
+    margin-bottom: 14px;
+  }
+}
+.footer{
+  text-align: center;
+}

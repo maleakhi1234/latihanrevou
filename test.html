@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+            <img class="img-slideshow" src="IMG_0586.JPG" style="width: 1080;"; height="400">
+            <img class="img-slideshow" src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2021/05/Panduan_Lengkap_Digital_Marketing.jpg" style="width: 1080;"; height="400">
+            <img class="img-slideshow" src="https://journal.revou.co/content/images/size/w692/2022/12/12292022---Journal-Banner-Testimoni-KM.png" style="width: 1080;"; height="400" >
+            
+            <button onclick="plusDivs(-1)">previous</button>
+            <button onclick="plusDivs(1)">next</button>
+
+             </div>
+                <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+               showDivs(slideIndex += n); 
+            }
+
+            function showDivs(n) {
+               var i;
+               var imgList = document.getElementsByClassName("img-slideshow");
+                if (n > imgList.length) slideIndex = 1; 
+                else if (n < 1) slideIndex = imgList.length;
+                    
+                   for (i = 0; i < imgList.length; i++) {
+                   imgList[i].style.display = 'none'
+                    
+                   }
+               
+              imgList[slideIndex - 1].style.display = 'block';
+            }
+            setInterval(() => {
+                plusDivs(1)
+            },1000)
+        </script>
+
+</body>
+</html>

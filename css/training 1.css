@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+/* stayle navbar */
+ .header{
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background: beige;
+
+}
+.logo{
+    width: 50px;
+}

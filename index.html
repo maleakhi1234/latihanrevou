@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="training 2.css">
+    <script src="app.js"></script>
+
+<style>
+   @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+}
+</style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <img class="logo" src="https://images.glints.com/unsafe/960x0/glints-dashboard.s3.amazonaws.com/company-logo/19b731a8e55d1291039e4f3ebba818b8.png"  alt="" />
+          
+            <div class="menu">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="profile.html" class="Profile">Our Profile</a></li>
+                    <li><a href="#contact">Achievement</a></li>
+                    <li><a href="#about">Message Us</a></li>
+                  </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section id="utama">
+               <h3 class="utama-header">Hi <span id="Name"></span>, Welcome to Website</h3>
+              <script>
+                function replaceName() {
+                    let Name = prompt("Please Enter Your Name","");
+                    document.getElementById("Name").innerHTML = Name;
+                }
+                replaceName();
+              </script>
+                <p class="paragraf-utama">ini adalah website latihan pertama</p>
+                <div class="container">
+                    <img class="img-slideshow" src="IMG_0586.JPG" style="width: 1366;"; height="578">
+                    <img class="img-slideshow" src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2021/05/Panduan_Lengkap_Digital_Marketing.jpg" style="width: 1366;"; height="578">
+                    <img class="img-slideshow" src="https://journal.revou.co/content/images/size/w692/2022/12/12292022---Journal-Banner-Testimoni-KM.png" style="width: 1366;"; height="578" >
+                    
+                    <button onclick="plusDivs(-1)">previous</button>
+                    <button onclick="plusDivs(1)">next</button>
+        
+                     </div>
+                        <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+        
+                    function plusDivs(n) {
+                       showDivs(slideIndex += n); 
+                    }
+        
+                    function showDivs(n) {
+                       var i;
+                       var imgList = document.getElementsByClassName("img-slideshow");
+                        if (n > imgList.length) slideIndex = 1; 
+                        else if (n < 1) slideIndex = imgList.length;
+                            
+                           for (i = 0; i < imgList.length; i++) 
+                           {
+                           imgList[i].style.display = 'none'
+                            
+                           }
+                       
+                      imgList[slideIndex - 1].style.display = 'block';
+                    }
+                    setInterval(() => {
+                        plusDivs(1)
+                    },1000)
+                </script>
+
+            </section>
+            <section id="facilititation"> 
+                <h1 class="facil-title">Our facilititation</h1>
+            <div class="facil-list">
+                <div>
+                <img src="IMG_0567.JPG" alt="" class="facil-img">
+                <p class="facil-paragraf">Profesional Teacher</p></div>
+                <div>
+                <img src="https://th.bing.com/th/id/OIP.stlMCvElShONZs6PUnmMmQHaE7?w=280&h=186&c=7&r=0&o=5&pid=1.7" alt=""class="facil-img">
+                <p class="facil-paragraf">Sport Field</p></div>
+                <div>
+                <img src="https://live.staticflickr.com/3679/12350625924_4666cbabf7.jpg" alt=""class="facil-img">
+                <p class="facil-paragraf">Class Room</p></div>
+            </section>
+            </div>
+            <section id="massage" class="massage-selection">
+               
+                <div class="container">
+                    <h1>Message Us</h1>
+                    <div class="validasi-utama">
+                <div class="validasi-inti" style="flex: 50%;">
+                <form name="message-form" onsubmit="return validateForm()">
+                    <div class="validasi-dua">
+                    Nama: <input placeholder="Nama" type="text" name="full-name" required />
+                    <br />
+                
+                    Tanggal Lahir:
+                    <input type="date" name="birth-date" required/>
+                    <br />
+                
+                    Jenis Kelamin
+                    <input type="radio" id="male" name="gender" value="Laki-laki" required />
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan" required />
+                    <label for="female">Perempuan</label>
+                    <br />
+                    
+                    Pesan:
+                    <textarea placeholder="Pesan" name="messages" required></textarea>
+                    <br />
+                </div>
+                    <input type="Submit" value="Submit" required />
+                    </form>
+                </div>
+                    <script>
+                        function validateForm(){
+                            var name = document.forms['message-form']['full-name'].value;
+                            var date = document.forms['message-form']['birth-date'].value;
+                            var gender = document.forms['message-form']['gender'].value;
+                            var messages = document.forms['message-form']['messages'].value;
+                            document.getElementById("sender-full-name").innerText = name;
+                            document.getElementById("sender-birthdate").innerText = date;
+                            document.getElementById("sender-gender").innerText = gender;
+                            document.getElementById("sender-massages").innerText = messages;
+                            return false;
+                        }
+                    </script>
+                    
+                <div class="validasi-tiga"onsubmit="function setSenderUI(name, birthDate, gender, massage)">
+                    <p>Nama: <span id="sender-full-name"></span></p>
+                    <p>Tanggal Lahir: <span id="sender-birthdate"></span></p>
+                    <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                    <p>Messages: <span id="sender-massages"></span></p>
+                </div> 
+            </div>
+            </div>
+            </section>
+    </main>
+    
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+     <p>created by: maleakhi Virgino Joseph </p>
+  </footer>
+
+</body>
+</html>
